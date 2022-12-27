@@ -621,7 +621,7 @@ BARBA TRANSITIONS
 				// animate loading screen in
 				await pageTransitionIn(current);
 				console.log("LEAVE");
-				querySelector('body').style.overflow = 'hidden';
+				current.querySelector('body').style.overflow = 'hidden';
 			},
 
     
@@ -630,7 +630,7 @@ BARBA TRANSITIONS
 				// animate loading screen away
 				pageTransitionOut(next);
 				console.log("NEXT");
-				querySelector('body').style.overflow = 'auto';
+				next.querySelector('body').style.overflow = 'auto';
 			},
 
 			afterEnter({ next }) {},
