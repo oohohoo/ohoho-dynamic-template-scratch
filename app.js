@@ -621,21 +621,16 @@ BARBA TRANSITIONS
 				// animate loading screen in
 				await pageTransitionIn(current);
 				console.log("LEAVE");
+				data.current.container.querySelector('body').style.overflow = 'hidden';
 			},
 
-      leave: function(data) {
-        // hide scrollbar on page transition
-        data.current.container.querySelector('body').style.overflow = 'hidden';
-      },
-      after: function(data) {
-        // show scrollbar after page transition
-        data.next.container.querySelector('body').style.overflow = 'auto';
-     }, 
+    
 
 			enter({ next }) {
 				// animate loading screen away
 				pageTransitionOut(next);
 				console.log("NEXT");
+				data.next.container.querySelector('body').style.overflow = 'auto';
 			},
 
 			afterEnter({ next }) {},
