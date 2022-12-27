@@ -480,7 +480,7 @@ KILL WEBFLOW BADGE
 CUBERTO CURSOR
 ================================================================================
 */
-
+/* 
  .mf-cursor {
   position: fixed;
   top: 0;
@@ -529,7 +529,6 @@ CUBERTO CURSOR
   color: #e51e3d;
 }
 
-/*@supports(mix-blend-mode: exclusion) { */
   .mf-cursor.-exclusion {
       mix-blend-mode: exclusion;
   }
@@ -537,7 +536,7 @@ CUBERTO CURSOR
   .mf-cursor.-exclusion:before {
       background: #fff
   }
-/*}*/
+
 
 .mf-cursor.-pointer:before {
   transform: scale(0.15)
@@ -634,7 +633,7 @@ CUBERTO CURSOR
   transform: scale(0.696);
   transition-duration: .4s, .4s;
   transition-delay: 0s, 0s
-}
+} */
 
       
 

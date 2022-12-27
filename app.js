@@ -552,7 +552,7 @@ BARBA VIEWS
 		{
 			namespace: "home",
 			beforeEnter(data) {
-				homeProductHover();
+				//homeProductHover();
 			},
 		},
 		{
