@@ -339,7 +339,7 @@ function initContent() {
 	};
 
 	// LOAD THIS SCRIPTS ON EVERY PAGE
-	//initScroll();
+	initScroll();
  //fullscreenMenu();
 
    //vhFix(); 
