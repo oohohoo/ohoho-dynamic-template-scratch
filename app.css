@@ -284,8 +284,16 @@ IS TRANSITIONING / BLUE PROGRESS CURSOR & POINTER EVENTS
 }
 
 
-.is-transitioning .navbar {
-  visibility: hidden;
+.is-transitioning body::-webkit-scrollbar {
+  width: 0;
+}
+
+.is-transitioning body::-moz-scrollbar {
+  width: 0;
+}
+
+.is-transitioning body::scrollbar {
+  width: 0;
 }
 
 /*

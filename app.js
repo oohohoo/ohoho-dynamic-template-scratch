@@ -623,16 +623,14 @@ BARBA TRANSITIONS
 				console.log("LEAVE");
 			},
 
-     /*  leave: function(data) {
-        // hide navbar on page transition
-        data.current.container.querySelector('.navbar').style.visibility = 'hidden';
+      leave: function(data) {
+        // hide scrollbar on page transition
+        data.current.container.querySelector('body').style.overflow = 'hidden';
       },
       after: function(data) {
-        // show navbar after page transition
-        data.next.container.querySelector('.navbar').style.visibility = 'visible';
-
-
-      }, */
+        // show scrollbar after page transition
+        data.next.container.querySelector('body').style.overflow = 'auto';
+     }, 
 
 			enter({ next }) {
 				// animate loading screen away
