@@ -622,6 +622,18 @@ BARBA TRANSITIONS
 				await pageTransitionIn(current);
 				console.log("LEAVE");
 			},
+
+      leave: function(data) {
+        // hide navbar on page transition
+        data.current.container.querySelector('.navbar').style.visibility = 'hidden';
+      },
+      after: function(data) {
+        // show navbar after page transition
+        data.next.container.querySelector('.navbar').style.visibility = 'visible';
+
+
+      },
+
 			enter({ next }) {
 				// animate loading screen away
 				pageTransitionOut(next);

@@ -284,6 +284,10 @@ IS TRANSITIONING / BLUE PROGRESS CURSOR & POINTER EVENTS
 }
 
 
+.is-transitioning .navbar {
+  visibility: hidden;
+}
+
 /*
 ================================================================================
 HIDE - VISIBILITY HIDDEN
