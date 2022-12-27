@@ -633,19 +633,6 @@ BARBA TRANSITIONS
 				/* document.querySelector('body').style.overflow = 'auto'; */
 			},
 
-			leave: function(data) {
-				// hide scrollbar on page transition
-				console.log('Hiding scrollbar');
-				data.current.container.querySelector('body').style.overflow = 'hidden';
-			  },
-			  after: function(data) {
-				// show scrollbar after page transition
-				console.log('Showing scrollbar');
-				data.next.container.querySelector('body').style.overflow = 'auto';
-			  },
-
-
-
 			afterEnter({ next }) {},
 
 			beforeEnter({ next }) {
