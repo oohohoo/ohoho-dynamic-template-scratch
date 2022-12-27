@@ -623,7 +623,7 @@ BARBA TRANSITIONS
 				console.log("LEAVE");
 			},
 
-      leave: function(data) {
+     /*  leave: function(data) {
         // hide navbar on page transition
         data.current.container.querySelector('.navbar').style.visibility = 'hidden';
       },
@@ -632,7 +632,7 @@ BARBA TRANSITIONS
         data.next.container.querySelector('.navbar').style.visibility = 'visible';
 
 
-      },
+      }, */
 
 			enter({ next }) {
 				// animate loading screen away
