@@ -621,7 +621,7 @@ BARBA TRANSITIONS
 				// animate loading screen in
 				await pageTransitionIn(current);
 				console.log("LEAVE");
-				document.querySelector('body').style.overflow = 'hidden';
+				/* document.querySelector('body').style.overflow = 'hidden'; */
 			},
 
     
@@ -630,8 +630,21 @@ BARBA TRANSITIONS
 				// animate loading screen away
 				pageTransitionOut(next);
 				console.log("NEXT");
-				document.querySelector('body').style.overflow = 'auto';
+				/* document.querySelector('body').style.overflow = 'auto'; */
 			},
+
+			leave: function(data) {
+				// hide scrollbar on page transition
+				console.log('Hiding scrollbar');
+				data.current.container.querySelector('body').style.overflow = 'hidden';
+			  },
+			  after: function(data) {
+				// show scrollbar after page transition
+				console.log('Showing scrollbar');
+				data.next.container.querySelector('body').style.overflow = 'auto';
+			  },
+
+
 
 			afterEnter({ next }) {},
 
